@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+What are the issues with the controller code below?
+How would you fix it? Assume ~500k posts
 
-Things you may want to cover:
+## Issue
+The controller has an inefficient process of loading entire tables and iterating over records on the server side.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Improvement
+1. Add request test to protect endpoint behaviour.
+2. Shift process to database.
+3. Adding pagination.
